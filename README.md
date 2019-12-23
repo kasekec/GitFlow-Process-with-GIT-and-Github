@@ -33,3 +33,23 @@ git flow feature start flowFeature
 ```sh
 git flow feature finish flowFeature
 ```
+
+### Step 3 - Release Feature Branch
+
+Once 'develop' has acquired enough features for a release, you fork a 'release' branch off of 'develop'. Creating this branch starts the next release cycle, so no new features can be added after this point. Only bug fixes, documentation generation, and other release-oriented tasks should go in this branch.
+
+#### Starting a Release branch
+```sh
+git flow release start 0.1.0
+```
+
+#### Finishing a Release branch
+```sh
+git checkout master 
+git merge release/0.1.0 
+git flow release finish '0.1.0'
+```
+This will send you into the vim text editor 
+- Press i to enter insert modeType in your message (e.g. v0.1.0), 
+- press ESC to exit insert mode, and 
+- type zz to save and exit. Alternatively, you can type in :wq and hit ENTER
