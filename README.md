@@ -1,7 +1,8 @@
 # Gitflow Workflow
 ## A step by Step guide on using GitFlow worklow with GIT and Github for collaboration
 
-Gitflow Workflow is a Git workflow design that was first published and made popular by Vincent Driessen at nvie. The Gitflow Workflow defines a strict branching model designed around the project release. This provides a robust framework for managing larger projects.
+
+Gitflow Workflow is a Git workflow design that was first published and made popular by [Vincent Driessen at nvie](https://nvie.com/posts/a-successful-git-branching-model/). The Gitflow Workflow defines a strict branching model designed around the project release. This provides a robust framework for managing larger projects.
 
 Gitflow is ideally suited for projects that have a scheduled release cycle. This workflow doesn’t add any new concepts or commands beyond what’s required for the Feature Branch Workflow. Instead, it assigns very specific roles to different branches and defines how and when they should interact. In addition to feature branches, it uses individual branches for preparing, maintaining, and recording releases. Of course, you also get to leverage all the benefits of the Feature Branch Workflow: pull requests, isolated experiments, and more efficient collaboration.
 
@@ -55,7 +56,7 @@ This will send you into the vim text editor
 - type zz to save and exit. Alternatively, you can type in :wq and hit ENTER
 
 
-#### Hotfix branches
+#### Step 4 - Hotfix branches
 
 Maintenance or “hotfix” branches are used to quickly patch production releases. Hotfix branches are a lot like release branches and feature branches except they are based on 'master' instead of 'develop'. This is the only branch that should fork directly off of 'master'. As soon as the fix is complete, it should be merged into both 'master' and 'develop' (or the current release branch), and 'master' should be tagged with an updated version number
 
@@ -92,3 +93,7 @@ The overall flow of Gitflow is:
 5. When the release branch is done it is merged into develop and master
 6. If an issue in master is detected a hotfix branch is created from master
 7. Once the hotfix is complete it is merged to both develop and master
+
+### Contributors
+- Muyembe Muchanga
+- Kaseke F Chinyemba
