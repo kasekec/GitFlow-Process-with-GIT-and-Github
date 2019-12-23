@@ -74,3 +74,21 @@ This will send you into the vim text editor
 - Press i to enter insert modeType in your message (e.g. v0.1.0), 
 - press ESC to exit insert mode, and 
 - type zz to save and exit. Alternatively, you can type in :wq and hit ENTER
+
+
+## Summary
+
+This guide described a typical Gitflow Workflow. Gitflow is one of many styles of Git workflows you and your team can utilize.
+
+Some key takeaways to know about Gitflow are:
+- The workflow is great for a release-based software workflow.
+- Gitflow offers a dedicated channel for hotfixes to production.
+
+The overall flow of Gitflow is:
+1. A develop branch is created from master
+2. A release branch is created from develop
+3. Feature branches are created from develop
+4. When a feature is complete it is merged into the develop branch
+5. When the release branch is done it is merged into develop and master
+6. If an issue in master is detected a hotfix branch is created from master
+7. Once the hotfix is complete it is merged to both develop and master
