@@ -20,3 +20,16 @@ mkdir GitflowGuide
 cd GitflowGuide
 git flow init
 ```
+
+### Step 2 - Create New Feature Branch
+
+ Each new feature resides in it's own branch, which can be pushed to the central repository (GitHub, Bitbucket etc.) for backup/collaboration. But, instead of branching off of 'master', 'feature' branches use 'develop' as their parent branch. When a feature is complete, it gets merged back into 'develop'. A common rule of thumb is that features should never interact directly with master.
+
+#### Starting a feature branch
+```sh
+git flow feature start flowFeature
+```
+#### Finishing a feature branch
+```sh
+git flow feature finish flowFeature
+```
