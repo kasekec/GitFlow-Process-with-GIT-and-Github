@@ -53,3 +53,24 @@ This will send you into the vim text editor
 - Press i to enter insert modeType in your message (e.g. v0.1.0), 
 - press ESC to exit insert mode, and 
 - type zz to save and exit. Alternatively, you can type in :wq and hit ENTER
+
+
+#### Hotfix branches
+
+Maintenance or “hotfix” branches are used to quickly patch production releases. Hotfix branches are a lot like release branches and feature branches except they are based on 'master' instead of 'develop'. This is the only branch that should fork directly off of 'master'. As soon as the fix is complete, it should be merged into both 'master' and 'develop' (or the current release branch), and 'master' should be tagged with an updated version number
+
+#### Starting a Hotfix branch
+```sh
+git flow hotfix start v1
+```
+
+#### Finishing a Hotfix branch
+```sh
+git checkout master 
+git merge hotfix/v1 
+git flow hotfix finish v1
+```
+This will send you into the vim text editor 
+- Press i to enter insert modeType in your message (e.g. v0.1.0), 
+- press ESC to exit insert mode, and 
+- type zz to save and exit. Alternatively, you can type in :wq and hit ENTER
