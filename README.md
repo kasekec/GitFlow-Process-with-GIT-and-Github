@@ -11,3 +11,12 @@ Gitflow is ideally suited for projects that have a scheduled release cycle. This
 To use GitFlow, you will first need to install Git on your machine.
 
 For installation on Windows, Mac or Linux, follow the instructions in the article [here](https://www.digitalocean.com/community/tutorials/how-to-contribute-to-open-source-getting-started-with-git)
+
+Once Git is installed and ready to go, you can begin working with GitFlow.
+
+### Step 1 - Create a new Directory and Initialize GitFlow
+```sh
+mkdir GitflowGuide
+cd GitflowGuide
+git flow init
+```
